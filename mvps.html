@@ -1,1 +1,112 @@
-h
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NBA</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Add your styles here */
+		nav {
+			background-color: rgb(2, 2, 250);
+			overflow: hidden;
+		}
+		nav a {
+			float: left;
+			display: block;
+			color: #ffffff;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		nav a:hover {
+			background-color: #ff0000;
+			color: black;
+		}
+		nav .icon {
+			display: none;
+		}
+		@media screen and (max-width: 600px) {
+			nav a:not(:first-child) {
+				display: none;
+			}
+			nav a.icon {
+				float: right;
+				display: block;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			nav.responsive {
+				position: relative;
+			}
+			nav.responsive a.icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			nav.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="teams.html">Teams</a>
+			<a href="players.html">Players</a>
+			<a href="championships.html">Championships</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</nav>
+		<script>
+			function myFunction() {
+				var x = document.getElementsByTagName("nav")[0];
+				if (x.className === "") {
+					x.className += "responsive";
+				} else {
+					x.className = "";
+				}
+			}
+		</script>
+	</header>
+	<main>  
+        <h2>NBA History</h2>
+		ss
+Copy code
+<ol>
+  <li>Bob Pettit (1956)</li>
+  <li>Bill Russell (1958, 1961–1963)</li>
+  <li>Wilt Chamberlain (1960, 1966–1968)</li>
+  <li>Oscar Robertson (1964)</li>
+  <li>Willis Reed (1970)</li>
+  <li>Kareem Abdul-Jabbar (1971, 1972, 1974, 1976, 1977, 1980)</li>
+  <li>Moses Malone (1979, 1982, 1983)</li>
+  <li>Larry Bird (1984, 1985, 1986)</li>
+  <li>Magic Johnson (1987, 1989–1990)</li>
+  <li>Michael Jordan (1988, 1991–1992, 1996–1998)</li>
+  <li>Charles Barkley (1993)</li>
+  <li>Hakeem Olajuwon (1994)</li>
+  <li>David Robinson (1995)</li>
+  <li>Karl Malone (1997, 1999)</li>
+  <li>Shaquille O'Neal (2000, 2001)</li>
+  <li>Tim Duncan (2002, 2003)</li>
+  <li>Steve Nash (2005, 2006)</li>
+  <li>Dirk Nowitzki (2007)</li>
+  <li>Kobe Bryant (2008)</li>
+  <li>LeBron James (2009, 2010, 2012, 2013, 2016, 2020)</li>
+  <li>Derrick Rose (2011)</li>
+  <li>Kevin Durant (2014)</li>
+  <li>Stephen Curry (2015, 2016)</li>
+  <li>Russell Westbrook (2017)</li>
+  <li>James Harden (2018)</li>
+  <li>Giannis Antetokounmpo (2019, 2020)</li>
+  <li>Nikola Jokić (2021, 2022)</li>
+  <li>Joel Embiid (2023)</li>
+</ol>
+	</main>
+    
+</body>
+</html>
